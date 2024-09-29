@@ -42,11 +42,13 @@
 
 ## Page Tables
 
-- Virtual memory pages and physical memory page frames are the same size
+- Virtual memory pages and physical memory page frames are the same size to keep track of the translation of every single 
+individual virtual address
 - Useful acronyms for page tables:
   - VPN (virtual page number)
   - PFN (physical frame number)
-- Page table has allocation on first touch!
+- Page table has allocation on first touch physical memory for the array in the virtual address space is only 
+allocated when the process is first trying to access it!
 - Unused pages are reclaimed:
   - Mapping invalid
   - Hardware will fault
